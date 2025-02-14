@@ -1,0 +1,63 @@
+.App {
+  background-color:grey;
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.main {
+  border:3px solid black;
+  border-radius:20px;
+  width:50%;
+  height:80%;
+  background-color:darkgray;
+}
+
+.tokenEntry {
+  padding:10% 10%;
+  display:flex;
+  justify-content: center;
+}
+
+.tokenEntryButton {
+  border:1px solid black;
+  padding:.5em 1em;
+  font-size:2em;
+  border-radius:1em;
+  background-color:tan;
+}
+
+.tokenEntryButton:hover {
+  cursor:pointer;
+}
+
+.options {
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  padding:0;
+}
+
+.option {
+  color: black !important;
+  text-decoration:none;
+  font-size:2em;
+  text-align:center;
+  padding:20px 0;
+}
+
+.option:hover {
+  background-color:rgb(134, 131, 131);
+  cursor:pointer;
+}
+
+.option:first-child {
+  margin-top:20px;
+}
+
+.option:not(:last-child) {
+  border-bottom:1px solid black;
+}

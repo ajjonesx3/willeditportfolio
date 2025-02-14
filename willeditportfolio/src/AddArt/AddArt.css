@@ -1,0 +1,56 @@
+.title {
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    padding: 2% 0;
+    border-bottom:3px solid black;
+}
+
+.addArtForm {
+    display:flex;
+    flex-direction:column;
+}
+
+.inputSection {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    justify-content:left;
+    grid-template-rows:1fr;
+    font-size: 2em;
+    padding:2% 0;
+    border-bottom:1px dashed rgb(75, 75, 75);
+}
+
+.inputSection label {
+    justify-self:right;
+    padding-right:5%;
+
+}
+
+.inputSection input, select {
+    align-self:center;
+    width:50%;
+    height:80%;
+    font-size:.5em;
+}
+
+.submitSection {
+    display:flex;
+    justify-content:center;
+    padding:2%;
+}
+
+.submitButton {
+    border:2px solid rgb(195, 250, 184);
+    border-radius:.5em;
+    padding:4px 8px;
+    background-color:green;
+    font-size:1.5em;
+    color: rgb(195,250,184);
+    box-shadow:0 2px rgb(195, 250, 184);
+}
+
+.submitButton:hover {
+    cursor:pointer;
+
+}
