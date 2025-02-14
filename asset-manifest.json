@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/willeditportfolio/static/css/main.e197e2cc.css",
-    "main.js": "/willeditportfolio/static/js/main.e84b19b2.js",
+    "main.css": "/willeditportfolio/static/css/main.e5fd12c8.css",
+    "main.js": "/willeditportfolio/static/js/main.ca23dd68.js",
     "static/media/logo.svg": "/willeditportfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/willeditportfolio/index.html",
-    "main.e197e2cc.css.map": "/willeditportfolio/static/css/main.e197e2cc.css.map",
-    "main.e84b19b2.js.map": "/willeditportfolio/static/js/main.e84b19b2.js.map"
+    "main.e5fd12c8.css.map": "/willeditportfolio/static/css/main.e5fd12c8.css.map",
+    "main.ca23dd68.js.map": "/willeditportfolio/static/js/main.ca23dd68.js.map"
   },
   "entrypoints": [
-    "static/css/main.e197e2cc.css",
-    "static/js/main.e84b19b2.js"
+    "static/css/main.e5fd12c8.css",
+    "static/js/main.ca23dd68.js"
   ]
 }
