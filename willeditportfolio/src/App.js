@@ -16,6 +16,7 @@ function App() {
     <Link className="option" to="/AddBlogPost">Add blog post</Link>
   </ul> 
 
+  /*
   useEffect(()=>{
 
     const sessionToken = sessionStorage.getItem("portfolioght");
@@ -25,6 +26,7 @@ function App() {
 
 
   },[])
+  */
 
   return (
     <Router>
@@ -34,7 +36,7 @@ function App() {
             <Route path="/token" element={<Token setToken={setToken}/>} />
             <Route path="/" element={token ? mainPage : <h2 style={{textAlign:'center'}}>No token</h2>} />
             <Route path="/AddArt" element={<AddArt token={token}/>} />
-            <Route path="/AddBlogPost" element={<AddBlogPost />} />
+            <Route path="/AddBlogPost" element={<AddBlogPost token={token}/>} />
           </Routes>
         </div>
 

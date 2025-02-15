@@ -9,7 +9,7 @@ const Token = ({setToken}) => {
 
     useEffect(()=>{
         setToken(searchParams.get('portfolioght'));
-        sessionStorage.setItem("portfolioght", searchParams.get('portfolioght'));
+        //sessionStorage.setItem("portfolioght", searchParams.get('portfolioght'));
         nav('/');
     },[])
 
