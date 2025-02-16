@@ -15,19 +15,7 @@ function App() {
     <Link className="option" to="/AddArt">Add art</Link>
     <Link className="option" to="/AddBlogPost">Add blog post</Link>
   </ul> 
-
-  /*
-  useEffect(()=>{
-
-    const sessionToken = sessionStorage.getItem("portfolioght");
-    if(sessionToken !== "null"){
-      setToken(sessionToken);
-    }
-
-
-  },[])
-  */
-
+  
   return (
     <Router>
       <div className="App">

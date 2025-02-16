@@ -1,5 +1,6 @@
 import './AddArt.css';
 import {useState} from 'react';
+import HomeButton from '../HomeButton.js';
 
 const options = ["Animation", "Design", "Storyboard"];
 
@@ -77,7 +78,10 @@ const AddArt = ({token}) => {
 
     return (
         <div className="AddArt">
-            <h1 className="title">Add Art</h1>
+            <div className="header">
+                <HomeButton />
+                <h1 className="title">Add Art</h1>
+            </div>
             <div className="addArtForm">
                 <div className="inputSection">
                     <label for="artTypeInput">Art Type:</label>

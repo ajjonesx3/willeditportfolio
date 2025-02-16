@@ -1,9 +1,9 @@
-.title {
-    display:flex;
-    justify-content:center;
-    text-align:center;
-    padding: 2% 0;
-    border-bottom:3px solid black;
+
+.AddArt {
+    height:100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
 }
 
 .addArtForm {

@@ -61,3 +61,28 @@
 .option:not(:last-child) {
   border-bottom:1px solid black;
 }
+
+.header {
+  display:flex;
+  align-items:center;
+  width:100%;
+  border-bottom:2px solid black;
+}
+
+.homeButton {
+  border:1px solid black;
+  position:absolute;
+  margin-left:2%;
+  padding:.5em;
+  border-radius:.5em;
+  background-color:tan;
+}
+
+.homeButton:hover{
+  cursor:pointer;
+}
+
+.header .title {
+  justify-self:center;
+  margin:auto;
+}

@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import './AddBlogPost.css';
+import HomeButton from '../HomeButton.js';
 
 const AddBlogPost = ({token}) => {
 
@@ -56,7 +57,6 @@ const AddBlogPost = ({token}) => {
     }
 
     const uploadFile = async (file, filePath) => {
-        setResponseMessages([]);
 
         const GITHUB_USERNAME = "ajjonesx3";
         const REPO = "willportfolio";
@@ -120,14 +120,22 @@ const AddBlogPost = ({token}) => {
 
         const folderName = folderSafe(blogTitle);
 
-        //await uploadFile(file,`src/WillBlogs/${folderName}/${file.name}`);
+        setResponseMessages([]);
 
         const blogObject = {
             title: blogTitle,
             text: blogText,
         }
+
+        const tFile = file;
+
+        setFile();
+        setBlogTitle("");
+        setBlogText("");
+
         await uploadObject(blogObject, `src/WillBlogs/${folderName}/blogData.json`)
-        uploadFile(file,`src/WillBlogs/${folderName}/${file.name}`);
+        await uploadFile(tFile,`src/WillBlogs/${folderName}/${tFile.name}`);
+
     }
 
     const onFileChange = e => {
@@ -137,7 +145,10 @@ const AddBlogPost = ({token}) => {
 
     return (
         <div className="AddBlogPost">
-            <h1 className="title">Add Blog Post</h1>
+            <div className="header">
+                <HomeButton />
+                <h1 className="title">Add Blog Post</h1>
+            </div>
             <div className="blogForm">
                 <div className="blogInputSection titleArea"> 
                     <input type="text" name="blogTitle" onChange={(e)=>setBlogTitle(e.target.value)} placeholder="Title" value={blogTitle} />
